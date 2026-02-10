@@ -119,9 +119,9 @@ main {
 }
 
 
-@media (min-width: 900px) {
+@media (min-width: 56.25rem) {
     h1 {
-        font-size: 36px;
+        font-size: 2.25rem;
     }
     article {
         display: flex;
@@ -132,7 +132,7 @@ main {
         }
     }
     .container {
-        max-width: 1210px;
+        max-width: 75.625rem;
     }
     .cards {
         display: grid;
