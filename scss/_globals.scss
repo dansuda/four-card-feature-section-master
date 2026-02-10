@@ -1,0 +1,138 @@
+* {
+    box-sizing: border-box;
+}
+
+
+h1, h2 {
+    font-weight: $bold;
+}
+
+h1 {
+    font-size: 1.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+
+
+.flex {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--col {
+        flex-direction: column;
+    }
+}
+
+
+//specific classes
+
+body {
+    margin: 0;
+    padding: 0;
+
+    background-color: $white;
+
+    font-family: "Poppins", sans-serif;
+    font-size: 0.9375rem;
+    color: $darkGray;
+    line-height: 1.4;
+}
+
+main {
+    min-height: 100svh;
+}
+
+.container {
+    width: 85%;
+    padding: 3.5rem 0;
+}
+
+.article {
+    text-align: center;
+    margin-block-end: 4rem;
+
+    h1{
+        margin: 0;
+
+        span{
+            font-weight: $light;
+        }
+    }
+}
+
+.cards {
+    width: 100%;
+    gap: 2rem;
+
+    h2 {
+        margin: 0;
+    }
+
+    p {
+        margin: 0;
+        margin-block-start: 0.5rem;
+        font-size: 0.8125rem;
+    }
+
+    .team-x-karma {
+        gap: 2rem;
+    }
+    
+
+    .card {
+        width: 100%;
+        max-width: 22rem;
+        // max-height: 247px;
+        padding: 2rem;
+        background-color: $white;
+        border-radius: 0.5rem;
+
+        display: flex;
+        flex-direction: column;
+
+        img {
+            align-self: flex-end;
+            margin-block-start: 2rem;
+        }
+    }
+
+    .supervisor {
+        box-shadow: 0 15px 50px -27px $lightGray, 0px -7px 0px -3px $cyan;
+    }
+    .team {
+        box-shadow: 0 15px 50px -27px $lightGray, 0px -7px 0px -3px $red;
+    }
+    .karma {
+        box-shadow: 0 15px 50px -27px $lightGray, 0px -7px 0px -3px $orange;
+    }
+    .calc {
+        box-shadow: 0 15px 50px -27px $lightGray, 0px -7px 0px -3px $blue;
+    }
+}
+
+
+@media (min-width: 900px) {
+    .container {
+        max-width: 1210px;
+    }
+    .cards {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        
+        
+        .supervisor {
+            margin-left: auto;
+        }
+        .calc {
+            margin-right: auto;
+        }
+    }
+}
