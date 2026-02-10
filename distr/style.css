@@ -98,9 +98,9 @@ main {
   box-shadow: 0 15px 50px -27px hsl(212, 6%, 44%), 0px -7px 0px -3px hsl(212, 86%, 64%);
 }
 
-@media (min-width: 900px) {
+@media (min-width: 56.25rem) {
   h1 {
-    font-size: 36px;
+    font-size: 2.25rem;
   }
   article {
     display: flex;
@@ -111,7 +111,7 @@ main {
     max-width: 45%;
   }
   .container {
-    max-width: 1210px;
+    max-width: 75.625rem;
   }
   .cards {
     display: grid;
